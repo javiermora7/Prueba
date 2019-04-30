@@ -1,0 +1,29 @@
+.asideadmind {
+	
+clear:both;
+   float:left;
+   font-family: cursive;
+    border: 1px solid #CC0099  ;
+    border-radius: 22px;
+    
+    font-family: cursive;
+
+margin-left: -110px;
+padding-right: 10px;
+margin-top: 20px;
+ 
+
+
+}
+
+.chapa{
+
+   font-family: cursive;
+   color:  #CC0099;
+ border: 1px solid black;
+ margin-top: -100px;
+ margin-left: 100px;
+ padding-bottom: 30px;
+ padding-left: 20px;
+}
+ 
