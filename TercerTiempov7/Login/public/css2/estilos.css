@@ -1,0 +1,55 @@
+@media screen and (max-width: 768px) {
+    h1{
+        font-size:14px;
+    }
+}
+input[type="button"]{
+	background: blue;
+	cursor: pointer;
+	color: #fff;
+}
+input[type="button"]:hover{
+	background: #ccc;
+	color: #000;
+}
+.cerrar {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: inline-block;
+	float: right;
+	color: #fff;
+	background: #ccc;
+}
+
+.oscurecer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	display: none;
+	background: black;
+}
+.registrar {
+	width: 40%;
+	background: #fff;
+	border-radius: 1em;
+	padding: 3em;
+	position: absolute;
+	
+	top:100px;
+	left: 30%;
+	z-index: 200;
+	display: none;
+}
+.registrar h1 {
+	color: #333;
+	text-shadow:none;
+}
+.registrar input {
+	width: 100%;
+	padding: 1em;
+	margin-bottom: 10px;
+}
