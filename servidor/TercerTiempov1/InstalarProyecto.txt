@@ -1,0 +1,6 @@
+1- composer install
+2- clonar .dev
+3- para subir fotos -> php artisan storage:link en la consola
+4- ajustar boton khipu (150x50) si es que deseas ocupar el pago.
+5- agregar  campo "fecha_mensualidad" en tabla evento
+6- al migrar hay que crear de nuevo la tabla pagos, eliminando la anterior, junto a oc y las demas ligadas..

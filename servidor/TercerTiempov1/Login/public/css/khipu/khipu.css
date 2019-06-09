@@ -1,0 +1,24 @@
+body{
+  margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  
+    background: url(/image/deporte.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.FomrKhipu{
+background-color:rgb(255, 255, 255);
+ margin: 80px auto; 
+ max-width: 960px;
+ text-align: center;
+  opacity:0.9;
+   filter:alpha(opacity=5); /* IE < 9.0 */
+   
+}
+h1{
+background-color: rgb(90, 88, 82);
+   color: rgb(245, 238, 238);
+}
