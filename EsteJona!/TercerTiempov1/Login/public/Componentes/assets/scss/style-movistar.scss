@@ -1,0 +1,267 @@
+@import 'vars';
+@import 'eco-fonts';
+
+body {
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.bold {
+    font-weight: bolder;
+}
+
+.sm-gutter {
+    $sm : 5px;
+    margin-right: -$sm;
+    margin-left: -$sm;
+    > *[class^="col-"] {
+        padding-left:$sm;
+        padding-right:$sm;
+    }
+} 
+
+.btn-secondary {
+    color: #fff;
+    background-color:$secundary ;
+    border-color: $secundary;
+    &:hover, &:active, &:focus {
+        background-color: darken( $secundary , 5% ) ;
+        border-color: darken( $secundary , 5% );
+    }
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: $secundary ;
+    border-color: $secundary ;
+}
+
+.btn-outline-secondary {
+    color: $secundary;
+    border-color: $secundary;
+}
+.btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled).active, 
+.btn-outline-secondary:not(:disabled):not(.disabled):active, 
+.show>.btn-outline-secondary.dropdown-toggle {
+    color: white;
+    background-color: $secundary;
+    border-color: $secundary;
+}
+
+.btn-secondary.focus, .btn-secondary:focus, 
+.btn-outline-secondary.focus, .btn-outline-secondary:focus, 
+.btn-secondary:not(:disabled):not(.disabled).active:focus, 
+.btn-secondary:not(:disabled):not(.disabled):active:focus, 
+.show > .btn-secondary.dropdown-toggle:focus, 
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, 
+.show > .btn-outline-secondary.dropdown-toggle:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus, 
+.btn-secondary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-secondary.dropdown-toggle:focus,
+.btn-secondary.focus, .btn-secondary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(81, 187, 55, 0.5);
+}
+
+
+.btn-link {
+    color:$primary;
+}
+
+.custom-checkbox label {
+    cursor:pointer
+} 
+
+.call-to-actions h5 {
+    font-size:1rem;
+    font-weight: norm   al;
+}
+
+.card-part {
+    border-bottom: 1px solid #ccc;
+    &:last-child {
+        border-bottom:0px;
+    }
+    .card-part-text {
+        font-size: 1rem;
+    }
+}
+
+.link-call-to-action {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem 0px;
+    .icon-font {
+        font-size: 5em;
+        color: $primary;
+    }
+    .card-part-text  {
+        margin:0px;
+        padding-left:1rem;
+
+    }
+} 
+// dual boxes
+.bootstrap-duallistbox-container  .btn-group.buttons {
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    button:first-child {
+        border-right: 1px solid #ccc;
+    }
+    button{
+        width: 50%;
+        &:hover, &:active, &:focus {
+            background-color: $primary;
+            color: white; 
+        }
+    }
+}
+
+.box-campaign-group {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.filter {
+    padding: 1rem;
+}
+td.actions a span{
+    font-size: 1.3rem;
+}
+
+td.actions a.danger:hover {
+    color: $danger;
+}
+
+.wizard > .steps > ul > li {
+    width: calc(100% / 5);
+}   
+
+.rule-title {
+    display:block;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rule-group {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0px;
+}
+
+.rule-body {
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+ul.steps {
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    @include min-lg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-column-gap: 5px;
+    }
+
+}
+
+li.step {
+    width: 100%;
+    display: flex;
+    background-color: rgba($primary, .2);
+    justify-content: flex-start;
+    align-items: center;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color:$primary;
+
+    @include min-lg {
+        margin-bottom:0px;
+        display: flex;
+        flex-direction: row;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+
+span.circle {
+    width: 40px;
+    display: block;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid $primary;
+    position: relative;
+    margin-right: 4px;
+}
+
+span.number {
+    position: relative;
+    display: block;
+    line-height: 36px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+        color: $primary
+}
+
+span.text {
+    color: $primary
+}
+
+
+li.step.active {
+    background-color: $primary;
+    color: white;
+    span.circle {
+        border: 2px solid white;   
+    }
+    span.number {
+        color:white;
+    }
+    span.text {
+        color:white;
+    }
+}
+
+td.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    .span {
+        font-size:20px;
+    }
+}
+
+.btn-copy {
+    padding-left:3px;
+    border-left:1px solid #ccc;
+    margin-left:2rem;
+}
+
+.play-progress-wrap {
+    width: 80px;
+    padding: 3px;
+    display: flex;
+    justify-content: flex-end;
+}
+.progress {
+    height: 5px;
+    width: 100%;
+    margin: 5px 0;
+}
