@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'font-ecofacturaplus';
+  src:  url('../fonts/font-ecofacturaplus.eot?dyq82g');
+  src:  url('../fonts/font-ecofacturaplus.eot?dyq82g#iefix') format('embedded-opentype'),
+    url('../fonts/font-ecofacturaplus.ttf?dyq82g') format('truetype'),
+    url('../fonts/font-ecofacturaplus.woff?dyq82g') format('woff'),
+    url('../fonts/font-ecofacturaplus.svg?dyq82g#font-ecofacturaplus') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="eco-"], [class*=" eco-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'font-ecofacturaplus' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.eco-area:before {
+  content: "\e90f";
+}
+.eco-cicle:before {
+  content: "\e910";
+}
+.eco-company:before {
+  content: "\e911";
+}
+.eco-config:before {
+  content: "\e912";
+}
+.eco-file-1:before {
+  content: "\e913";
+}
+.eco-file-2:before {
+  content: "\e914";
+}
+.eco-file-3:before {
+  content: "\e915";
+}
+.eco-mail-cnfig:before {
+  content: "\e916";
+}
+.eco-marketing:before {
+  content: "\e917";
+}
+.eco-user:before {
+  content: "\e918";
+}
+.eco-layaout:before {
+  content: "\e90e";
+}
+.eco-email:before {
+  content: "\e90d";
+}
+.eco-cancel:before {
+  content: "\e909";
+}
+.eco-pause:before {
+  content: "\e90a";
+}
+.eco-play:before {
+  content: "\e90b";
+}
+.eco-stop:before {
+  content: "\e90c";
+}
+.eco-home:before {
+  content: "\e900";
+}
+.eco-calendar:before {
+  content: "\e901";
+}
+.eco-close:before {
+  content: "\e902";
+}
+.eco-copy:before {
+  content: "\e903";
+}
+.eco-delete:before {
+  content: "\e904";
+}
+.eco-edit:before {
+  content: "\e905";
+}
+.eco-send:before {
+  content: "\e906";
+}
+.eco-template:before {
+  content: "\e907";
+}
+.eco-wand:before {
+  content: "\e908";
+}
+
